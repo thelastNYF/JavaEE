@@ -2,6 +2,8 @@ package content;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 /**
  * @author 24047
@@ -10,7 +12,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Computer {
+
     private Displayer myDisplayer;
+
     private Printer myPrinter;
 
     public void display(){
